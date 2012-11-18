@@ -1,0 +1,19 @@
+<h1>Yesod Web Framework
+<h2>Tutorial en Español
+
+<div class="bigText">
+  <p>Esta aplicación web es el resultado del tutorial sobre Yesod que puedes leer aquí:
+  <p style="text-align: center">
+    <a href="/static/tutorial/yesod_tutorial.html">Yesod Web Framework (en español)
+  <br />
+  <p>Esta aplicación es plenamente funcional, las principales funcionalidades cubiertas son:
+  <ul>
+    <li>Autenticación con <i>"Mozilla Persona"</i> o con <i>"Google"</i>
+    <li>Gestión del perfil de usuario
+    <li>Creación, modificación y eliminación de eventos personales
+    <li>Listado de eventos personales
+  <br />
+  <p>Funciones importantes pendientes de realizar
+  <ul>
+    <li>Notificar a los usuarios de sus eventos via e-mail
+  <br />

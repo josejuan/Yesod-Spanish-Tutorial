@@ -1,0 +1,11 @@
+<h1>Editando un evento</h1>
+
+#{message}
+<form method=post action=@{EventEditR eventId} enctype=#{formEnc}>
+  ^{form}
+  <br />
+  <input type="submit" name="Guardar" value="Guardar">
+  <input type="submit" name="Nuevo" value="Nuevo">
+  <input type="submit" name="Deshacer" value="Deshacer">
+  <input type="submit" name="Eliminar" value="Eliminar" class="warn">
+  <input type="submit" name="Volver" value="Volver">

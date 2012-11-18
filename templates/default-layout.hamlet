@@ -1,0 +1,11 @@
+<header>
+  ^{nmHeader}
+            
+<div #main role=main .nm_body>
+  $maybe msg <- mmsg
+    <div #message>#{msg}
+  ^{widget}
+            
+<footer>
+  ^{nmFooter}
+  #{extraCopyright $ appExtra $ settings master}

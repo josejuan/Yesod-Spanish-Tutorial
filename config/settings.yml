@@ -1,0 +1,20 @@
+Default: &defaults
+  host: "*4" # any IPv4 host
+  port: 8181
+  approot: "http://shared.computer-mind.com:8181"
+  copyright: Insert copyright statement here
+  #analytics: UA-YOURCODE
+  aboutmessage: Esto es un texto de ejemplo.
+
+Development:
+  <<: *defaults
+
+Testing:
+  <<: *defaults
+
+Staging:
+  <<: *defaults
+
+Production:
+  #approot: "http://www.example.com"
+  <<: *defaults

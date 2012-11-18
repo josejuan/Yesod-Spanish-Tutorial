@@ -1,0 +1,7 @@
+<div #nmLogin>
+  <span>User:</span>
+  <span #nmUser>
+    $maybe _ <- maid
+      #{user} (<a href=@{AuthR LogoutR}>Logout</a> | <a href=@{UserProfileR}>My profile</a>)
+    $nothing
+      <a href=@{AuthR LoginR}>Login

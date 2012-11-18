@@ -1,0 +1,25 @@
+<div>
+  <a href="/">
+    <img alt="" src=@{StaticR img_clock120_png}>
+  <h1>Notify me!
+  <h2>Small site to don't forgot important dates!
+  ^{nmLogin}
+
+$if isauth
+  <div id=userMenu>
+    <ul>
+      <li>
+        <a href=@{UserProfileR}>
+          <img src=@{StaticR img_menu_userprofile_png} alt="" class=left />
+          <img src=@{StaticR img_menu_arrow_png} alt="" class=right />
+          <span>Perfil de usuario
+      <li>
+        <a href=@{EventListR}>
+          <img src=@{StaticR img_menu_events_png} alt="" class=left />
+          <img src=@{StaticR img_menu_arrow_png} alt="" class=right />
+          <span>Eventos programados
+      <li>
+        <a href=@{EventEditR 0}>
+          <img src=@{StaticR img_menu_newevent_png} alt="" class=left />
+          <img src=@{StaticR img_menu_arrow_png} alt="" class=right />
+          <span>Crear evento

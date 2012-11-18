@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [ "$1" == "all" ]
+then
+	cabal clean && cabal configure && cabal build
+fi
+
+mkdir -p "./dist/NotifyMe.site/"
+cp "./dist/build/NotifyMe/NotifyMe" "./dist/NotifyMe.site/"
+mkdir "./dist/NotifyMe.site/config"
+cp "./config/settings.yml" "./dist/NotifyMe.site/config"
+cp "./config/sqlite.yml" "./dist/NotifyMe.site/config"
+cp -r "./static" "./dist/NotifyMe.site/"
+echo "Se ha generado en: ./dist/NotifyMe.site/"
+

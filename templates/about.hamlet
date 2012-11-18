@@ -1,0 +1,8 @@
+<h1>Acerca de "Notify Me"
+<p><b>Notify Me</b> es la aplicación con la que se desarrolla el tutorial de Yesod en español.
+<hr />
+$maybe aboutmessage <- getAboutMessage
+  <h1>#{aboutmessage}
+<hr />
+^{w3cValidator}
+

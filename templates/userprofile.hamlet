@@ -1,0 +1,6 @@
+<h1>Perfil de usuario</h1>
+
+<form method=post action=@{UserProfileR} enctype=#{formEnc}>
+  ^{form}
+  <br />
+  <input type=submit>

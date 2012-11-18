@@ -1,0 +1,13 @@
+<h1>Listado de eventos</h1>
+
+<table class=dataTable>
+  <tr>
+    <th>Evento
+    <th>Fecha
+    <th>Acciones
+  $forall e <- list
+    <tr class=#{fst e}>
+      <td>#{eventSubject $ entityVal $ snd e}
+      <td class=dataRight>#{show $ eventFireAt $ entityVal $ snd e}
+      <td class=dataCenter>
+        <a href=@{EventEditR $ fromKey $ entityKey $ snd e}>editar

@@ -1,0 +1,183 @@
+body {
+  background-color: white;
+  background-image: url(/static/img/headerbg.gif);
+  background-repeat: repeat-x;
+}
+
+.container {
+  width: 700px;
+  margin: auto;
+  margin-top: 30px;
+  -moz-box-shadow:    0 0 10px 4px #000000;
+  -webkit-box-shadow: 0 0 10px 4px #000000;
+  box-shadow:         0 0 10px 4px #000000;
+  margin-bottom: 100px;
+}
+
+header div {
+  background-color: #8080f0;
+  height: 124px;
+  padding: 3px;
+  position: relative;
+}
+
+header div img {
+  float: left;
+}
+header div h1,h2 {
+  text-align: left;
+  color: white;
+  font-style: italic;
+}
+header div h1 {
+  font-size: 42px;
+  margin: 20px 0 0 120px;
+}
+header div h2 {
+  font-size: 12px;
+  margin: 10px 0 0 160px;
+}
+
+#main {
+  background-color: white;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding: 15px;
+}
+
+footer {
+  text-align: right;
+  background-color: #e0e0e0;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+#nmLogin {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 5px;
+  margin-top: 5px;
+  background: none;
+}
+
+form {
+  border: 1px solid gray;
+  padding: 20px;
+  background-color: #e5e5e5;
+  -moz-box-shadow:    3px 3px 4px 2px #505050;
+  -webkit-box-shadow: 3px 3px 4px 2px #000000;
+  box-shadow:         3px 3px 4px 2px #a0a0a0;
+}
+
+input[type=submit] {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+}
+
+input[type=submit]:hover {
+  background-color: #30a030;
+  text-decoration: underline;
+}
+
+.warn {
+  background-color: red !important;
+}
+
+.warn:hover {
+  background-color: #a03030 !important;
+}
+
+.dataTable {
+  margin: 1em auto;
+  border-collapse: collapse;
+}
+
+.dataTable td {
+  border: 1px solid #757fa8;
+  color: #678197;
+  padding: .3em 1em;
+  text-align: center;
+}
+
+.dataTable tr.dataEven td {
+  background: #f7fbff
+}
+
+.dataTable th {
+  border: 1px solid #757fa8;
+  background: #d4d9de;
+  text-align: center;
+  padding: .3em 1em;
+  font: bold 1.0em/2em "Century Gothic","Trebuchet MS",Arial,Helvetica,sans-serif;
+  color: #66a3d3;
+}
+
+#userMenu {
+  float: bottom;
+  height: auto;
+  margin-top: 0;
+  padding: 10px;
+  background-color: white;
+}
+
+#userMenu ul {
+  float: bottom;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+
+  padding: 0;
+  margin-top: 0;
+
+  border-bottom: 1px solid #E5E5E5;
+  border-right: 1px solid #E5E5E5;
+}
+
+#userMenu li {
+  display: table-cell;
+  padding: 0;
+  margin: 0;
+
+  color: #2C2B2B;
+  font-size: 1.16667em;
+  text-align: center;
+  border-left: 1px solid #E5E5E5;
+  border-top: 1px solid #E5E5E5;
+}
+
+#userMenu li a {
+  display: inline-block;
+  color: #2C2B2B;
+  text-decoration: underline;
+  font: 14px 'Copse',Georgia,serif;
+  letter-spacing: 0.03em;
+  background-color: #F8F8F8;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#userMenu li a .left {
+  float: left;
+  margin: 10px 0 10px 10px;
+}
+#userMenu li a span {
+  display: block;
+  margin: 15px 0 0 0;
+  padding: 0;
+}
+#userMenu li a .right {
+  float: right;
+  margin: 17px 10px 10px 0;
+}
+
+#userMenu li a:hover {
+  background-color: #E8E8E8;
+}
+
+.bigText p {
+  font-size: 16px;
+}
