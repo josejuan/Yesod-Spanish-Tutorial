@@ -8,3 +8,4 @@ cabal-dev
 NotifyMe.sqlite3
 NotifyMe.sqlite3*
 notas.txt
+config/client_session_key.aes
