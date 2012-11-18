@@ -5,3 +5,6 @@ cabal-dev
 *.chi
 *.chs.h
 .virthualenv
+NotifyMe.sqlite3
+NotifyMe.sqlite3*
+notas.txt
