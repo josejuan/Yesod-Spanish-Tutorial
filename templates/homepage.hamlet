@@ -21,3 +21,21 @@
     <li>Helpers en edición de evento: "fijar para próximo: [año], [mes]"
     <li>Más información en el listado de eventos y ordenar por proximidad
   <br />
+  <p>El sistema en producción está funcionando con sólo:
+  <ul>
+    <li><b>120 Mbytes</b> de memoria RAM
+    <li><b>855 Mbytes</b> de HDD totales en el sistema
+  <pre style="color: #505050">
+   [root@luna ~]# uname -a 
+   Linux luna <span style="color: green; font-weight: bold">3.6.6-1-ARCH</span> #1 SMP PREEMPT Mon Nov 5 11:57:22 CET 2012 x86_64 GNU/Linux
+   <br />
+   [root@luna ~]# cat /proc/meminfo | grep ^MemTotal 
+   <span style="color: green; font-weight: bold">MemTotal:         120004 kB</span>
+   <br />
+   [root@luna ~]# lsblk | grep -v ^sr0 
+   NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+   sda      8:0    0    1G  0 disk
+   +-sda1   8:1    0  <span style="color: green; font-weight: bold">855M  0 part /</span>
+   +-sda2   8:2    0  169M  0 part [SWAP]
+
+
