@@ -12,8 +12,12 @@
     <li>Gestión del perfil de usuario
     <li>Creación, modificación y eliminación de eventos personales
     <li>Listado de eventos personales
-  <br />
-  <p>Funciones importantes pendientes de realizar
-  <ul>
     <li>Notificar a los usuarios de sus eventos via e-mail
+  <br />
+  <p>Funciones pendientes de realizar
+  <ul>
+    <li>Terminar CRUD completo de eventos
+    <li>Poder fijar antelación con que notificar
+    <li>Helpers en edición de evento: "fijar para próximo: [año], [mes]"
+    <li>Más información en el listado de eventos y ordenar por proximidad
   <br />
