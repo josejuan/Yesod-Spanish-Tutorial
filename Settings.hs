@@ -63,6 +63,8 @@ widgetFile = (if development then widgetFileReload
 
 data Extra = Extra
     { extraCopyright :: Text
+    , siteMail :: Text
+    , doTasksGrantedIps :: Text
     , extraAnalytics :: Maybe Text -- ^ Google Analytics
     , aboutMessage   :: Maybe Text -- ^ About Message
     } deriving Show
@@ -70,5 +72,7 @@ data Extra = Extra
 parseExtra :: DefaultEnv -> Object -> Parser Extra
 parseExtra _ o = Extra
     <$> o .:  "copyright"
+    <*> o .:  "sitemail"
+    <*> o .:  "dotasksgrantedips"
     <*> o .:? "analytics"
     <*> o .:? "aboutmessage"

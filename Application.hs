@@ -23,6 +23,9 @@ import Handler.About
 import Handler.UserProfile
 import Handler.EventEdit
 import Handler.EventList
+import Handler.DoTasks
+import Handler.JsonTest
+import Handler.SortWords
 import MasterPage.PublicLayout ()
 
 -- This line actually creates our YesodDispatch instance. It is the second half

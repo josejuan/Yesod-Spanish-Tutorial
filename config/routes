@@ -9,4 +9,7 @@
 /userprofile UserProfileR GET POST
 /event/#Int/edit EventEditR GET POST
 /event EventListR GET
+/internal/dotasks DoTasksR GET
 
+/jsontest JsonTestR GET
+/sort/*Texts SortWordsR GET

@@ -20,6 +20,7 @@ Event
     user UserId
     subject Text
     detail Text
+    notified Bool
     fireAt Day
 
  -- By default this file is used in Model.hs (which is imported by Foundation.hs)

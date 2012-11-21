@@ -33,14 +33,17 @@ library
                      Handler.UserProfile
                      Handler.EventEdit
                      Handler.EventList
+                     Handler.DoTasks
+                     Handler.JsonTest
+                     Handler.SortWords
                      MasterPage.PublicLayout
                      Widget.W3CValidator
 
     if flag(dev) || flag(library-only)
         cpp-options:   -DDEVELOPMENT
-        ghc-options:   -Wall -O0
+        ghc-options:   -Wall -O0 -fno-warn-missing-signatures
     else
-        ghc-options:   -Wall -O2
+        ghc-options:   -Wall -O2 -fno-warn-missing-signatures
 
     extensions: TemplateHaskell
                 QuasiQuotes
@@ -56,7 +59,7 @@ library
                 NoMonomorphismRestriction
 
     build-depends: base                          >= 4          && < 5
-                 -- , yesod-platform                >= 1.1        && < 1.2
+                 -- , yesod-platform             >= 1.1        && < 1.2
                  , yesod                         >= 1.1        && < 1.2
                  , yesod-core                    >= 1.1.2      && < 1.2
                  , yesod-auth                    >= 1.1        && < 1.2
@@ -68,7 +71,7 @@ library
                  , bytestring                    >= 0.9        && < 0.10
                  , text                          >= 0.11       && < 0.12
                  , persistent                    >= 1.0        && < 1.1
-                 , persistent-sqlite     >= 1.0        && < 1.1
+                 , persistent-sqlite             >= 1.0        && < 1.1
                  , template-haskell
                  , hamlet                        >= 1.1        && < 1.2
                  , shakespeare-css               >= 1.0        && < 1.1
@@ -84,6 +87,11 @@ library
                  , data-default
                  , time                          >= 1.4
                  , old-locale                    >= 1.0.0.4
+                 , yesod-json                    >= 1.1.0
+                 , mime-mail                     >= 0.4.1.2
+                 , wai                           >= 1.3.0.1
+                 , network                       >= 2.3.0.13
+                 , blaze-markup                  >= 0.5.1.1
 
 executable         NotifyMe
     if flag(library-only)

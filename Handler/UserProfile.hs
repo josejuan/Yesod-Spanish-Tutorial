@@ -28,7 +28,7 @@ getUserProfileR :: Handler RepHtml
 getUserProfileR = do
   userId <- requireAuthId
   userPersist <- runDB $ selectFirst [UserProfileUser ==. userId] []
-  let Entity userDataId userData = fromJust userPersist
+  let Entity _ userData = fromJust userPersist
       userData' = UserProfileForm (userProfileEmail          userData)
                                   (userProfileName           userData)
                                   (userProfileDefaultSubject userData)

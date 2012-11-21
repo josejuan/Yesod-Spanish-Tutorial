@@ -5,7 +5,9 @@ Default: &defaults
   copyright: Insert copyright statement here
   #analytics: UA-YOURCODE
   aboutmessage: Esto es un texto de ejemplo.
-
+  sitemail: notifyme@computer-mind.com
+  dotasksgrantedips: 127.0.0.1
+  
 Development:
   <<: *defaults
 
@@ -16,5 +18,8 @@ Staging:
   <<: *defaults
 
 Production:
-  #approot: "http://www.example.com"
+  port: 80
+  approot: "http://tutorial-yesod-haskell.computer-mind.com"
+  dotasksgrantedips: 37.235.53.89
+  sitemail: notifyme@computer-mind.com
   <<: *defaults
